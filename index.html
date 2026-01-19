@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TechWave</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -24,17 +25,22 @@
             >
           </a>
         </h2>
-        <ul class="flex justify-between gap-8 items-center">
+
+        <ul class="tech-wave-menu flex justify-between gap-8 items-center">
           <li><a href="#">About</a></li>
           <li><a href="#">Episodes</a></li>
           <li><a href="#">Host</a></li>
         </ul>
 
         <button
-          class="font-semibold text-base bg-gradient-to-bl from-[var(--color-01)] via-[var(--color-02)] via-60% to-[var(--color-03)] to-90% px-4 py-3 text-white rounded-[50px]"
+          class="subscribe font-semibold text-base bg-gradient-to-bl from-[var(--color-01)] via-[var(--color-02)] via-60% to-[var(--color-03)] to-90% px-4 py-3 text-white rounded-[50px]"
         >
           Subscribe<i class="fa-sharp fa-solid fa-arrow-right ml-4"></i>
         </button>
+
+        <div class="hamburger-icon">
+            <img src="./assets/hamburger-menu.png" alt="Hamburger">
+        </div>
       </nav>
 
       <section
@@ -56,7 +62,7 @@
                 class="absolute top-[25%] left-[25%] object-contain z-10 w-[50%] h-[50%]"
               />
               <button
-                class="py-2 px-4 bg-[var(--color-green)] font-semibold rounded-[50px] shadow-[0_0_10px_rgba(0,0,0,0.3)] shadow-[var(--color-green)] text-black absolute z-50 top-[5%] right-[5%]"
+                class="new-btn py-2 px-4 bg-[var(--color-green)] font-semibold rounded-[50px] shadow-[0_0_10px_rgba(0,0,0,0.3)] shadow-[var(--color-green)] text-black absolute z-50 top-[5%] right-[5%]"
               >
                 NEW
               </button>
@@ -74,7 +80,7 @@
               class="hero-bottom flex gap-2 items-center justify-center font-semibold"
             >
               <button
-                class="flex gap-1 justify-between items-center text-base bg-gradient-to-bl from-[var(--color-01)] via-[var(--color-02)] via-40% to-[var(--color-03)] to-90% px-5 py-3 text-white rounded-[50px]"
+                class="flex gap-1 justify-between items-center bg-gradient-to-bl from-[var(--color-01)] via-[var(--color-02)] via-40% to-[var(--color-03)] to-90% px-5 py-3 text-white rounded-[50px]"
               >
                 <img src="./assets/spotify.png" alt="Spotify" />Listen on
                 Spotify
@@ -114,7 +120,7 @@
           </div>
 
           <div
-            class="podcast-detail flex justify-between border-t border-[#412567] pt-[80px]"
+            class="podcast-detail grid grid-cols-4 justify-between border-t border-[#412567] pt-[80px]"
           >
             <div class="details-card">
               <h4 class="text-[var(--color-green)] font-black text-5xl">
@@ -149,11 +155,11 @@
         <div
           class="why-choose about-podcast max-w-[80%] w-full mx-auto pt-[120px] pb-[120px] text-white"
         >
-          <h3 class="font-bold text-5xl text-center pb-[40px]">
+          <h3 class="font-bold text-5xl text-center pb-10">
             Why Choose TechWave
           </h3>
 
-          <div class="grid grid-cols-3 grid-rows-3 gap-[30px]">
+          <div class="why-choose-grid grid grid-cols-3 grid-rows-3 gap-[30px]">
             <div
               class="bg-[var(--secondary-color)] p-10 rounded-[50px] col-span-1 row-span-2"
             >
@@ -219,7 +225,7 @@
       <section class="featured-container">
         <div class="featured max-w-[80%] mx-auto pt-[120px] text-white">
           <h3 class="font-bold text-5xl text-center pb-10">
-            Why Choose TechWave
+            Featured Episodes
           </h3>
 
           <div class="feature-card-container grid grid-cols-3 gap-[30px]">
@@ -309,7 +315,7 @@
           <div
             class="host flex gap-8 bg-[var(--secondary-color)] py-16 px-10 rounded-[50px] justify-center"
           >
-            <img src="./assets/host.png" alt="Host" />
+            <img src="./assets/host.png" alt="Host" class="host-image"/>
             <div class="host-content space-y-4">
               <h5 class="text-[32px] font-bold">Alex Kumar</h5>
               <p>
@@ -359,7 +365,7 @@
     </main>
 
     <footer
-      class="bg-[url('./assets/footer-bg.png')] bg-cover bg-center h-[412px] w-full"
+      class="footer-container bg-[url('./assets/footer-bg.png')] bg-cover bg-center w-full"
     >
       <div
         class="footer-container max-w-[80%] w-full text-center text-white mx-auto pt-[120px] pb-[120px] space-y-8"
@@ -372,31 +378,31 @@
         </h2>
 
         <ul
-          class="footer-web-app max-w-[544px] mx-auto flex justify-between gap-10 font-medium"
+          class="footer-web-app max-w-[60%] mx-auto grid grid-cols-4 gap-10 font-medium items-center justify-between"
         >
           <li class="web-app-card">
-            <a href="#" class="flex items-center space-x-2">
+            <a href="#" class="flex items-center space-x-2 justify-center">
               <img src="./assets/spotify.png" alt="Spotify" />
               <span>Spotify</span>
             </a>
           </li>
 
           <li class="web-app-card">
-            <a href="#" class="flex items-center space-x-2">
-              <img src="./assets/apple-podcast.png    " alt="Apple Podcasts" />
+            <a href="#" class="flex items-center space-x-2 justify-center">
+              <img src="./assets/apple-podcast.png" alt="Apple Podcasts" />
               <span>Apple Podcasts</span>
             </a>
           </li>
 
           <li class="web-app-card">
-            <a href="#" class="flex items-center space-x-2">
+            <a href="#" class="flex items-center space-x-2 justify-center">
               <img src="./assets/youtube-podcast.png" alt="YouTube" />
               <span>YouTube</span>
             </a>
           </li>
 
           <li class="web-app-card">
-            <a href="#" class="flex items-center space-x-2">
+            <a href="#" class="flex items-center space-x-2 justify-center">
               <img src="./assets/twitter.png" alt="Twitter" />
               <span>Twitter</span>
             </a>

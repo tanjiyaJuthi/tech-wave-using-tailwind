@@ -17,3 +17,138 @@
 body {
   font-family: var(--font-primary);
 }
+
+.hamburger-icon{
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .tech-wave-menu,
+  .subscribe {
+    display: none !important;
+  }
+
+  .hamburger-icon{
+    display: block !important;
+  }
+
+  h1 {
+    font-size: 40px !important;
+  }
+
+  h2 {
+    font-size: 35px !important;
+  }
+
+  h3 {
+    font-size: 30px !important;
+  }
+
+  h4 {
+    font-size: 25px !important;
+  }
+
+  h5 {
+    font-size: 20px !important;
+  }
+
+  body, .text-base {
+    font-size: 10px !important;
+  }
+
+  .hamburger-icon{
+    display: block !important;
+  }
+
+  .new-btn {
+    top: 0;
+    right: 0;
+    padding: 4px 10px !important;
+  }
+
+  .hero-container {
+    height: 450px !important;
+  }
+
+  .hero-wrapper {
+    padding: 50px 0 !important;
+  }
+
+  .podcast-content {
+    max-width: 100% !important;
+  }
+
+  .podcast-detail,
+  .why-choose,
+  .featured,
+  .meet-the-host {
+    padding-top: 50px !important;
+  }
+
+  .podcast-detail,
+  .footer-web-app {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 15px !important;
+  }
+
+  .podcast-detail,
+  .host {
+    flex-direction: column !important;
+  }
+
+  .about-podcast,
+  .podcast-content,
+  .meet-the-host{
+    padding-bottom: 50px !important;
+  }
+
+  .why-choose-grid,
+  .feature-card-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) !important;
+    grid-template-rows: repeat(1, 1fr) !important;
+    gap: 15px !important;
+  }
+
+  .why-choose div{
+    grid-row: span 1 !important;
+    grid-column: span 1 !important;
+    text-align: center !important;
+  }
+
+  .host .host-image {
+    width: 150px !important;
+    height: 150px !important;
+  }
+
+  .why-choose img,
+  .meet-the-host img {
+    margin: 0 auto !important;
+  }
+
+  .meet-the-host {
+    text-align: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  /* .footer-container {
+    height: 440px !important;
+  } */
+
+  .web-app-card a {
+    justify-content: center;
+  }
+
+  .footer-container {
+    padding: 20px 0px !important;
+  }
+}
+
+/* Medium screens 576px – 992px */
+@media (min-width: 575.9px) and (max-width: 992px) {
+
+}
