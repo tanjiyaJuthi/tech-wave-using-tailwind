@@ -62,7 +62,7 @@ body {
 
   .new-btn {
     top: 0;
-    right: 0;
+    right: 10%;
     padding: 4px 10px !important;
   }
 
@@ -215,5 +215,10 @@ body {
 
   .footer-container {
     height: 310px !important;
+  }
+
+  .new-btn {
+    font-size: 10px;
+    padding: 6px 10px !important;
   }
 }

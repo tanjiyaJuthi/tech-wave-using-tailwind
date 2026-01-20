@@ -22,12 +22,24 @@
         </h2>
 
         <ul class="tech-wave-menu flex justify-between gap-8 items-center">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Episodes</a></li>
-          <li><a href="#">Host</a></li>
+          <li>
+            <a href="#" class="              transition-all duration-300 ease-out hover:bg-gradient-to-bl hover:from-[var(--color-01)] hover:via-[var(--color-02)] hover:via-60% hover:to-[var(--color-03)] hover:to-90% hover:bg-clip-text hover:text-transparent">
+              About
+              </a>
+            </li>
+          <li>
+            <a href="#" class="              transition-all duration-300 ease-out hover:bg-gradient-to-bl hover:from-[var(--color-01)] hover:via-[var(--color-02)] hover:via-60% hover:to-[var(--color-03)] hover:to-90% hover:bg-clip-text hover:text-transparent">
+              Episodes
+            </a>
+          </li>
+          <li>
+            <a href="#" class="              transition-all duration-300 ease-out hover:bg-gradient-to-bl hover:from-[var(--color-01)] hover:via-[var(--color-02)] hover:via-60% hover:to-[var(--color-03)] hover:to-90% hover:bg-clip-text hover:text-transparent">
+              Host
+            </a>
+          </li>
         </ul>
 
-        <button class="subscribe font-semibold text-base bg-gradient-to-bl from-[var(--color-01)] via-[var(--color-02)] via-60% to-[var(--color-03)] to-90% px-4 py-3 text-white rounded-[50px]">
+        <button class="subscribe font-semibold text-base bg-gradient-to-bl from-[var(--color-01)] via-[var(--color-02)] via-60% to-[var(--color-03)] to-90% hover:from-[var(--color-03)] hover:via-[var(--color-02)] hover:to-[var(--color-01)] px-4 py-3  text-white rounded-[50px] transition-all duration-300 ease-out">
           Subscribe<i class="fa-sharp fa-solid fa-arrow-right ml-4"></i>
         </button>
 
@@ -50,7 +62,8 @@
                 alt="Microphone"
                 class="absolute top-[25%] left-[25%] object-contain z-10 w-[50%] h-[50%]"
               />
-              <button class="new-btn py-2 px-4 bg-[var(--color-green)] font-semibold rounded-[50px] shadow-[0_0_10px_rgba(0,0,0,0.3)] shadow-[var(--color-green)] text-black absolute z-50 top-[5%] right-[5%]" > NEW </button>
+              <button class="new-btn py-2 px-4 bg-[var(--color-green)] font-semibold rounded-[50px] shadow-[0_0_10px_rgba(0,0,0,0.3)] shadow-[var(--color-green)] text-black absolute z-50 top-[5%] right-[5%] transition-all duration-300 ease-out hover:shadow-[0_0_20px_var(--color-green)]
+         active:scale-95"" > NEW </button>
             </div>
 
             <div class="hero-middle pt-10 pb-6">
@@ -62,13 +75,13 @@
             </div>
 
             <div class="hero-bottom flex gap-2 items-center justify-center font-semibold" >
-              <button class="flex gap-1 justify-between items-center bg-gradient-to-bl from-[var(--color-01)] via-[var(--color-02)] via-40% to-[var(--color-03)] to-90% px-5 py-3 text-white rounded-[50px]" >
+              <button class="flex gap-1 justify-between items-center bg-gradient-to-bl from-[var(--color-01)] via-[var(--color-02)] via-40% to-[var(--color-03)] to-90% px-5 py-3 text-white rounded-[50px] hover:from-[var(--color-03)] hover:via-[var(--color-02)] hover:to-[var(--color-01)] transition-all duration-300 ease-out" >
                 <img src="./assets/spotify.png" alt="Spotify" />Listen on
                 Spotify
               </button>
 
-              <button class="flex gap-1 justify-between items-center text-[var(--color-green)] px-5 py-3 border-2 border-[var(--color-green)] rounded-[50px]" >
-                <img src="./assets/message.png" alt="Message" />Subscribe
+              <button class="flex gap-1 justify-between items-center text-[var(--color-green)] px-5 py-3 border-2 border-[var(--color-green)] rounded-[50px]  transition-all duration-300 ease-out hover:bg-[var(--color-green)] hover:text-black hover:shadow-[0_0_12px_var(--color-green)]" >
+                <img src="./assets/message.png" alt="Message" class="transition-transform duration-300 ease-out group-hover:translate-x-1"/> Subscribe
               </button>
             </div>
           </div>
