@@ -74,14 +74,20 @@ body {
     padding: 50px 0 !important;
   }
 
-  .podcast-content {
+  .wrapper {
+    max-width: 100% !important;
+  }
+
+  .podcast-content,
+  .footer-web-app {
     max-width: 100% !important;
   }
 
   .podcast-detail,
   .why-choose,
   .featured,
-  .meet-the-host {
+  .meet-the-host,
+  .footer-container-wrapper{
     padding-top: 50px !important;
   }
 
@@ -99,8 +105,13 @@ body {
 
   .about-podcast,
   .podcast-content,
-  .meet-the-host{
+  .meet-the-host,
+  .footer-container-wrapper{
     padding-bottom: 50px !important;
+  }
+
+  .about-podcast {
+    padding-top: 0 !important;
   }
 
   .why-choose-grid,
@@ -122,6 +133,10 @@ body {
     height: 150px !important;
   }
 
+  .host {
+    padding-top: 40px;
+  }
+
   .why-choose img,
   .meet-the-host img {
     margin: 0 auto !important;
@@ -135,20 +150,70 @@ body {
     justify-content: center;
   }
 
-  /* .footer-container {
-    height: 440px !important;
-  } */
-
   .web-app-card a {
     justify-content: center;
-  }
-
-  .footer-container {
-    padding: 20px 0px !important;
   }
 }
 
 /* Medium screens 576px – 992px */
 @media (min-width: 575.9px) and (max-width: 992px) {
+  .hero-container  {
+    height: 540px !important;
+  }
 
+  .podcast-content,
+  .footer-web-app {
+    max-width: 100%;
+  }
+
+  .podcast-content,
+  .about-podcast,
+  .why-choose,
+  .hero-wrapper,
+  .meet-the-host,
+  .footer-container-wrapper {
+    padding-bottom: 50px !important;
+  }
+
+  .podcast-detail,
+  .why-choose,
+  .hero-wrapper,
+  .featured,
+  .footer-container-wrapper {
+    padding-top: 50px !important;
+  }
+
+  .podcast-detail,
+  .footer-web-app{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 15px !important;
+  }
+
+  .feature-card-container,
+  .why-choose-grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) !important;
+    grid-template-rows: repeat(1, 1fr) !important;
+    gap: 15px !important;
+  }
+
+  .host {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .host .host-image {
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .footer-container {
+    height: 310px !important;
+  }
 }
